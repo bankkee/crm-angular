@@ -1,0 +1,31 @@
+<div class="container-login">
+  <mat-card>
+    <mat-card-content>
+      <div class="title-login">
+        <h1>Login</h1>
+      </div>
+      <div class="form-login">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" *ngIf="loginForm">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Username" formControlName="username" />
+            <mat-error> Please enter a username </mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width">
+            <input
+              matInput
+              type="password"
+              placeholder="Password"
+              formControlName="password"
+            />
+            <mat-error> Please enter a password </mat-error>
+          </mat-form-field>
+          <div class="button-login">
+            <button mat-fab extended color="primary" type="submit">
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

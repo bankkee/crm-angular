@@ -1,0 +1,41 @@
+.dashboard-container {
+  padding: 16px;
+  background-color: #eeeeee;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-card {
+  width: 280px;
+  height: 140px;
+}
+
+.container-card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  .label-card {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  .icon {
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+}
+
+.value-card {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--text-color);
+}

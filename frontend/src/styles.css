@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter;
+}
+
+app-root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  --primary-color: #0468ff;
+  --text-color: #000000;
+  --toolbar-background-color: #ffffff;
+  --toolbar-text-color: var(--text-color);
+  --dashboard-background-color: #eeeeee;
+}
+body.dark-mode {
+  --primary-color: #0468ff;
+  --text-color: #ffffff;
+  --toolbar-background-color: #303030;
+  --toolbar-text-color: var(--text-color);
+  --dashboard-background-color: #424242;
+}
+
+/* Apply the theme colors */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.mat-toolbar {
+  background-color: var(--toolbar-background-color) !important;
+  color: var(--toolbar-text-color) !important;
+}
+
+.mat-sidenav {
+  background-color: var(--toolbar-background-color) !important;
+  color: var(--toolbar-text-color) !important;
+}
+
+.mat-sidenav {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mat-toolbar {
+  transition: background-color 0.3s, color 0.3s;
+}
